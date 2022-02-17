@@ -35,8 +35,8 @@ function errorMessage(event) {
         errorInput.innerText = 'Invalid Input';
     }
 }
-function totalExpences(food, rent, cloth) {
-    let expense = parseFloat(food) + parseFloat(rent) + parseFloat(cloth);
+function totalExpences(foodCost, rentCost, clothCost) {
+    let expense = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothCost);
     return expense;
 }
 
@@ -87,18 +87,4 @@ document.getElementById('save-button').addEventListener('click', function () {
             errorMessage(3);
         }
     }
-});
-document.getElementById('reset-button').addEventListener('click', function () {
-    errorInput.style.display = 'none';
-    errorInput2.style.display = 'none';
-
-    foodInput.value = '';
-    rentInput.value = '';
-    clothInput.value = '';
-    saveInput.value = '';
-    balanceinput.innerText = '';
-    totalExpense.innerText = '';
-    saveAmount2.innerText = '';
-    remainingBal.innerText = '';
-    incomeInput.value = '';
 });
