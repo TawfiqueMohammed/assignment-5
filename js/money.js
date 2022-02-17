@@ -1,24 +1,20 @@
+function getInputValue(budget) {
+    const budgetInput = document.getElementById(budget + '-input');
+    const newBudgetInput = parseFloat(budgetInput.value);
+    return newBudgetInput;
+}
+
 
 document.getElementById('calculate-button').addEventListener('click', function () {
     // defining income input
-    const incomeInput = document.getElementById('income-input');
-    const newIncomeInputText = incomeInput.value;
-    const newIncomeInput = parseFloat(newIncomeInputText);
-
+    const newIncomeInput = getInputValue('income');
     // defining food input
-    const foodInput = document.getElementById('food-input');
-    const newFoodInputText = foodInput.value;
-    const newFoodInput = parseFloat(newFoodInputText);
-
+    const newFoodInput = getInputValue('food');
     // defining rent input
-    const rentInput = document.getElementById('rent-input');
-    const newRentInputText = rentInput.value;
-    const newRentInput = parseFloat(newRentInputText);
-
+    const newRentInput = getInputValue('rent')
     // defining cloth input
-    const clothInput = document.getElementById('cloth-input');
-    const newClothInputText = clothInput.value;
-    const newClothInput = parseFloat(newClothInputText);
+    const newClothInput = getInputValue('cloth');
+
 
     // taking total expense
     const totalExpenses = document.getElementById('total-expenses');
@@ -41,15 +37,11 @@ document.getElementById('calculate-button').addEventListener('click', function (
 });
 
 document.getElementById('save-button').addEventListener('click', function () {
-    // defining income input //////
-    const incomeInput = document.getElementById('income-input');
-    const newIncomeInputText = incomeInput.value;
-    const newIncomeInput = parseFloat(newIncomeInputText);
+    // defining income input
+    const newIncomeInput = getInputValue('income');
 
     // save part
-    const saveInput = document.getElementById('save-input');
-    const newSaveInputText = saveInput.value;
-    const newSaveInput = parseFloat(newSaveInputText);
+    const newSaveInput = getInputValue('save');
 
     const savingAmount = document.getElementById('saving-amount');
     const previousSavingAmountText = savingAmount.innerText;
@@ -63,22 +55,14 @@ document.getElementById('save-button').addEventListener('click', function () {
 
 
 
-
-
     // defining food input
-    const foodInput = document.getElementById('food-input');
-    const newFoodInputText = foodInput.value;
-    const newFoodInput = parseFloat(newFoodInputText);
+    const newFoodInput = getInputValue('food');
 
     // defining rent input
-    const rentInput = document.getElementById('rent-input');
-    const newRentInputText = rentInput.value;
-    const newRentInput = parseFloat(newRentInputText);
+    const newRentInput = getInputValue('rent')
 
     // defining cloth input
-    const clothInput = document.getElementById('cloth-input');
-    const newClothInputText = clothInput.value;
-    const newClothInput = parseFloat(newClothInputText);
+    const newClothInput = getInputValue('cloth');
 
     // taking total expense
     const totalExpenses = document.getElementById('total-expenses');
