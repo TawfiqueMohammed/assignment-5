@@ -1,3 +1,5 @@
+
+// declaring variable
 const incomeInput = document.getElementById('income-input');
 const foodInput = document.getElementById('food-input');
 const rentInput = document.getElementById('rent-input');
@@ -9,10 +11,10 @@ const saveAmount2 = document.getElementById('saving-amount');
 const remainingBal = document.getElementById("remaining-balance");
 const errorInput = document.getElementById('error-msg');
 const errorInput2 = document.getElementById('error-msg2');
-
 errorInput.style.display = 'none';
 errorInput2.style.display = 'none';
 
+// error handle function
 function errorMessage(event) {
     if (event == 1) {
         errorInput.style.display = 'block';
@@ -35,12 +37,14 @@ function errorMessage(event) {
         errorInput.innerText = 'Invalid Input';
     }
 }
+
+// total expenses sum
 function totalExpences(foodCost, rentCost, clothCost) {
     let expense = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothCost);
     return expense;
 }
 
-// calculate button action 
+// calculate button clicked 
 document.getElementById('calculate-button').addEventListener("click", function () {
     errorInput.style.display = 'none';
     errorInput2.style.display = 'none';
@@ -66,7 +70,7 @@ document.getElementById('calculate-button').addEventListener("click", function (
     }
 });
 
-// save button action 
+// save button clicked 
 document.getElementById('save-button').addEventListener('click', function () {
     errorInput.style.display = 'none';
     errorInput2.style.display = 'none';
@@ -87,4 +91,20 @@ document.getElementById('save-button').addEventListener('click', function () {
             errorMessage(3);
         }
     }
+});
+
+// reset button clicked
+document.getElementById('reset-button').addEventListener('click', function () {
+    errorInput.style.display = 'none';
+    errorInput2.style.display = 'none';
+
+    foodInput.value = '';
+    rentInput.value = '';
+    clothInput.value = '';
+    saveInput.value = '';
+    balanceinput.innerText = '';
+    totalExpense.innerText = '';
+    saveAmount2.innerText = '';
+    remainingBal.innerText = '';
+    incomeInput.value = '';
 });
