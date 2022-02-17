@@ -14,16 +14,20 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="">
         <h1 class="text-center p-4">Budget Expert</h1>
     </header>
+    <!-- container -->
     <main class="container">
         <div class="row">
+            <!-- image section -->
             <section class="col-lg-6 pb-4">
                 <div class="">
                     <img class="image" src="images/expense.png" alt="">
                 </div>
             </section>
+            <!-- calculate section -->
             <section class="col-lg-6 pb-5">
                 <div class="calculation">
                     <div class="row">
@@ -36,6 +40,8 @@
                         </div>
                     </div>
                     <br>
+
+                    <!-- expenses part -->
                     <div>
                         <h3 class="pb-3 text-center">Expenses</h3>
                         <div class="row">
@@ -67,10 +73,10 @@
                     <div class="p-4 text-center">
                         <button id="calculate-button" type="button" class="btn btn-primary">Calculate</button>
                     </div>
-                    <!-- error massage start -->
+                    <!-- error massage -->
                     <div id='error-msg' class="alert alert-danger mt-3" role="alert">
                     </div>
-                    <!-- error massage end -->
+
                     <h5 class="pb-2 text-center">Total Expenses: <span id="total-expenses"></span></h5>
 
                     <h5 class="pb-2 text-center">Balance: <span id="balance"></span></h5>
@@ -81,11 +87,11 @@
                         <span><strong>%</strong></span>
                         <button id="save-button" type="button" class="btn btn-primary">Save</button>
                     </div>
-                    <!-- error massage start -->
+                    <!-- error massage -->
                     <div id='error-msg2' class="alert alert-danger mt-3" role="alert">
                         A simple danger alert—check it out!
                     </div>
-                    <!-- error massage end -->
+
                     <h5 class="pb-2 text-center">Saving Amount: <span id="saving-amount"></span></h5>
                     <h5 class="pb-4 text-center">Remaining Balance: <span id="remaining-balance"></span></h5>
                     <div class="text-center">
