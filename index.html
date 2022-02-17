@@ -67,9 +67,13 @@
                     <div class="p-4 text-center">
                         <button id="calculate-button" type="button" class="btn btn-primary">Calculate</button>
                     </div>
+                    <!-- error massage start -->
+                    <div id='error-msg' class="alert alert-danger mt-3" role="alert">
+                    </div>
+                    <!-- error massage end -->
+                    <h5 class="pb-2 text-center">Total Expenses: <span id="total-expenses"></span></h5>
 
-                    <h5 class="pb-2 text-center">Total Expenses: <span id="total-expenses">0</span></h5>
-                    <h5 class="pb-2 text-center">Balance: <span id="balance">0</span></h5>
+                    <h5 class="pb-2 text-center">Balance: <span id="balance"></span></h5>
 
                     <div class="text-center">
                         <p>Save</p>
@@ -77,9 +81,16 @@
                         <span><strong>%</strong></span>
                         <button id="save-button" type="button" class="btn btn-primary">Save</button>
                     </div>
-
-                    <h5 class="pb-2 text-center">Saving Amount: <span id="saving-amount">0</span></h5>
-                    <h5 class="pb-4 text-center">Remaining Balance: <span id="remaining-balance">0</span></h5>
+                    <!-- error massage start -->
+                    <div id='error-msg2' class="alert alert-danger mt-3" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <!-- error massage end -->
+                    <h5 class="pb-2 text-center">Saving Amount: <span id="saving-amount"></span></h5>
+                    <h5 class="pb-4 text-center">Remaining Balance: <span id="remaining-balance"></span></h5>
+                    <div class="text-center">
+                        <button id="reset-button" class="btn btn-primary rounded-3">Reset All</button>
+                    </div>
                 </div>
             </section>
         </div>
